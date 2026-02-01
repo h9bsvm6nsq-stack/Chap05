@@ -13,7 +13,8 @@ int main()
     cout << "Code (1, 2, 3, or 4): ";
     cin >> code;
 
-    if (code == '1' || code == '3')
+    // Modified selection structure
+    if ((code == '1' || code == '3') && sales >= 20000)
         rate = 0.2;
     else
         rate = 0.15;
